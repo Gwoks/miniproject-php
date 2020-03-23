@@ -23,7 +23,7 @@ if(!empty($data->transaction_number)){
 
     if ($transactions_result) {
         echo json_encode(array(
-            "number transaction" => $flip_respose->{'id'},
+            "transaction_number" => $flip_respose->{'id'},
             "status" => $flip_respose->{'status'},
             "receipt" => $flip_respose->{'receipt'}
         ));
